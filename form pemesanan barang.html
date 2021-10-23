@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemesanan Barang</title>
+  </head>
+  <body style="border: 1px solid black; margin: auto">
+    <header style="background-color: gainsboro">
+      <nav style="align-items: center; padding-top: 1px; border-bottom: 1px solid black">
+        <p style="text-align: center; margin: 0; padding: 0"><b>Web Page</b></p>
+        <div style="display: flex; align-items: center">
+          <ul style="margin-right: 30px; display: flex; list-style-type: none; gap: 10px">
+            <li>
+              <img src="https://img.icons8.com/ios-glyphs/30/000000/left.png" alt="tanda panah undo" />
+              <img src="https://img.icons8.com/ios-glyphs/30/000000/right--v1.png" alt="tanda panah redo" />
+              <img style="width: 30px" src="https://img.icons8.com/fluency-systems-filled/30/000000/x.png" alt="tanda silang" />
+              <img style="width: 30px" src="https://img.icons8.com/material-outlined/24/000000/home--v2.png" alt="home" />
+            </li>
+            <li>
+              <input style="width: 1000px; height: 20px" type="text" name="serch" id="serch" class="serch" placeholder="http://" />
+            </li>
+            <li style="padding-right: 10px; display: flex; list-style-type: none">
+              <button style="width: 100px; height: 25px" class="search-btn" type="button">serch</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div style="padding-bottom: 20px; padding-left: 20px; padding-right: 20px; padding-top: 20px">
+      <ul style="display: flex; list-style-type: none; border: 1px solid black; gap: 180px">
+        <li>Home&emsp;|</li>
+        <li>Generate Link&ensp;|</li>
+        <li>Transaction History&ensp;|</li>
+        <li>Policy&ensp;|</li>
+        <li>Logout</li>
+      </ul>
+    </div>
+    <div class="container" style="display: flex">
+      <div>
+        <aside style="width: 250px; height: 300px; padding: 10px; display: grid; align-items: center; padding-left: 20px">
+          <input type="file" />
+        </aside>
+      </div>
+      <div>
+        <form action="pemesanan-barang.php">
+          <table>
+            <tbody>
+              <tr>
+                <td><label for="title">Title Here</label></td>
+                <td>:</td>
+                <td><input id="title" type="text" required /></td>
+              </tr>
+              <tr>
+                <td><label for="description">Description</label></td>
+                <td>:</td>
+                <td><textarea name="description" id="description" cols="50" rows="5"></textarea></td>
+              </tr>
+              <tr>
+                <td><label for="account-number">Account Number</label></td>
+                <td>:</td>
+                <td><input id="account-number" type="number" required /></td>
+              </tr>
+              <tr>
+                <td><label for="bank">Bank</label></td>
+                <td>:</td>
+                <td>
+                  <select name="bank" id="bank">
+                    <option value="">BCA</option>
+                    <option value="">BJB</option>
+                    <option value="">BNI</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="account-holder">Account Holder</label></td>
+                <td>:</td>
+                <td><input type="text" name="account-holder" id="account-holder" /></td>
+              </tr>
+              <tr>
+                <td><label for="transaction">Transaction</label></td>
+                <td>:</td>
+                <td><input style="width: 35px" type="number" id="transaction" /></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>* if the transaction is for 3 person, choose 3 from the drop-down list</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td style="color: green"><input type="checkbox" />Send to Mobile Phone</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td style="color: green"><input type="checkbox" />Send to Email</td>
+              </tr>
+              <tr>
+                <td><label for="sendphone">Send to Mobile Phone</label></td>
+                <td>:</td>
+                <td><input type="number" name="number" id="sendphone" /></td>
+              </tr>
+              <tr>
+                <td><label for="sendemail">Send to Email</label></td>
+                <td>:</td>
+                <td><input type="email" name="email" id="sendemail" placeholder="@" /></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td style="padding-top: 30px; padding-bottom: 5px"><input style="background-color: rgb(146, 207, 4)" type="submit" name="submit" value="Generate Nabr Link" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
